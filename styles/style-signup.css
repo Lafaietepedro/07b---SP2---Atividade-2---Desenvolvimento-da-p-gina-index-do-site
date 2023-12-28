@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Teko";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  height: 7rem;
+  background-color: #be3d26;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+}
+@media screen and (max-width: 320px) {
+  header {
+    flex-direction: column;
+  }
+}
+header nav {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+}
+@media screen and (max-width: 425px) {
+  header nav {
+    margin-left: 0;
+    width: 60%;
+    height: 90%;
+  }
+}
+@media screen and (max-width: 320px) {
+  header nav {
+    margin-left: 0;
+    width: 70%;
+    height: 70%;
+  }
+}
+header nav a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  padding: 20px;
+}
+@media screen and (max-width: 425px) {
+  header nav a {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 375px) {
+  header nav a {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header nav a {
+    font-size: 40px;
+  }
+}
+header nav a:hover {
+  color: black;
+}
+header nav img {
+  width: 8%;
+  height: 8rem;
+}
+@media screen and (max-width: 1440px) {
+  header nav img {
+    width: 12%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header nav img {
+    width: 16%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav img {
+    width: 20%;
+    height: 6rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  header nav img {
+    width: 24%;
+    height: 4rem;
+  }
+}
+header .login {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+@media screen and (max-width: 1024px) {
+  header .login {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .login {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .login {
+    margin-left: 0;
+    width: 50%;
+    height: 70%;
+  }
+}
+header .login a {
+  color: white;
+  font-size: 28px;
+  text-decoration: none;
+}
+header .login a:hover {
+  color: black;
+}
+@media screen and (max-width: 375px) {
+  header .login a {
+    font-size: 24px;
+  }
+}
+
+main {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/slash-gettyimages-860569936.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .login {
+  width: 30%;
+  height: 30rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: white;
+  opacity: 0.9;
+}
+@media screen and (max-width: 1024px) {
+  main .login {
+    width: 70%;
+  }
+}
+main .login h1 {
+  font-size: 50px;
+}
+main .login form {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .login form label {
+  font-size: 28px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+  main .login form label {
+    font-size: 24px;
+  }
+}
+main .login form input {
+  width: 100%;
+  height: 2rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+main .login button {
+  width: 20%;
+  height: 3rem;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1024px) {
+  main .login button {
+    width: 30%;
+  }
+}
+main .login button a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+main .new {
+  color: white;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .new p {
+  text-shadow: -10px 0 black;
+  color: white;
+  font-size: 40px;
+}
+main .new button {
+  width: 40%;
+  height: 3rem;
+  border-radius: 7px;
+}
+main .new button a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+}
+
+footer {
+  width: 100%;
+  height: 14rem;
+  background-color: #be3d26;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+footer p {
+  color: white;
+  font-size: 25px;
+}
+@media screen and (max-width: 320px) {
+  footer p {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style-signup.css.map */
+.cartLogo {
+  margin-left: 20px;
+}
+
+.signUpBtn {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.signUpBtn:hover {
+  background-color: #be3d26;
+}

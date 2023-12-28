@@ -1,0 +1,484 @@
+*{
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Teko";
+
+    font-size: 18px;
+
+}
+
+body{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-direction: column;
+
+}
+
+.header{
+
+    height: 80px;
+
+    width: 70%;
+
+    background-color: #be3d26;
+
+    border-radius: 3px;
+
+    margin: 30px 0px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 15px;
+
+}
+
+.header .logo{
+
+    font-size: 50px;
+
+    font-weight: normal;
+
+    color: white;
+
+}
+
+.cart{
+
+    display: flex;
+
+    background-color: white;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 7px 10px;
+
+    border-radius: 3px;
+
+    width: 80px;
+
+    opacity: 0%;
+}
+
+.fa-solid{
+
+    color: #be3d26;
+
+}
+
+.cart p{
+
+    height: 22px;
+
+    width: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 22px;
+
+    background-color: #be3d26;
+
+    color: white;
+
+}
+
+.container{
+
+    display: flex;
+
+    width: 70%;
+
+    margin-bottom: 30px;
+
+}
+
+#root{
+
+    width: 60%;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    grid-gap: 20px;
+
+}
+
+.sidebar{
+
+    width: 40%;
+
+    border-radius: 5px;
+
+    background-color: #eee;
+
+    margin-left: 20px;
+
+    padding: 15px;
+
+    text-align: center;
+
+}
+
+.head{
+
+    background-color: #be3d26;
+
+    border-radius: 3px;
+
+    height: 40px;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+.foot{
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin: 20px 0px;
+
+    padding: 10px 0px;
+
+    border-top: 1px solid #333;
+
+}
+
+.box{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    border: 1px solid #be3d26;
+
+    border-radius: 5px;
+
+    padding: 15px;
+
+}
+
+.img-box{
+
+    width: 100%;
+
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.images{
+
+    max-width: 90%;
+
+    max-height: 90%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+}
+
+.bottom{
+
+    margin-top: 20px;
+
+    width: 100%;
+
+    text-align: center;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    height: 110px;
+
+}
+
+.bottom p, .bottom h2 {
+    font-size: 26px;
+}
+
+h2{
+
+    font-size: 20px;
+
+    color: red;
+
+}
+
+button{
+
+    width: 100%;
+
+    position: relative;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #be3d26;
+
+    padding: 7px 25px;
+
+    cursor: pointer;
+
+    color: white;
+
+}
+
+button:hover{
+
+    background-color: #333;
+
+}
+
+.cart-item{
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 10px;
+
+    background-color: white;
+
+    border-bottom: 1px solid #aaa;
+
+    border-radius: 3px;
+
+    margin: 10px 10px;
+
+}
+
+.cart-item p {
+    font-size: 30px;
+}
+
+.row-img{
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50px;
+
+    border: 1px solid #be3d26;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+.rowimg{
+
+    max-width: 43px;
+
+    max-height: 43px;
+
+    border-radius: 50%;
+
+}
+
+.fa-trash:hover{
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+header {
+    width: 100%;
+    height: 7rem;
+    background-color: #be3d26;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+  }
+  @media screen and (max-width: 320px) {
+    header {
+      flex-direction: column;
+    }
+  }
+  header nav {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+  }
+  @media screen and (max-width: 425px) {
+    header nav {
+      margin-left: 0;
+      width: 60%;
+      height: 90%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    header nav {
+      margin-left: 0;
+      width: 70%;
+      height: 70%;
+    }
+  }
+  header nav a {
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 20px;
+  }
+  @media screen and (max-width: 425px) {
+    header nav a {
+      font-size: 35px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    header nav a {
+      font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    header nav a {
+      font-size: 40px;
+    }
+  }
+  header nav a:hover {
+    color: black;
+  }
+  header nav img {
+    width: 8%;
+    height: 8rem;
+  }
+  @media screen and (max-width: 1440px) {
+    header nav img {
+      width: 12%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    header nav img {
+      width: 16%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header nav img {
+      width: 20%;
+      height: 6rem;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    header nav img {
+      width: 24%;
+      height: 4rem;
+    }
+  }
+  header .login {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  @media screen and (max-width: 1024px) {
+    header .login {
+      width: 25%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    header .login {
+      width: 35%;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    header .login {
+      margin-left: 0;
+      width: 50%;
+      height: 70%;
+    }
+  }
+  header .login a {
+    color: white;
+    font-size: 28px;
+    text-decoration: none;
+  }
+  header .login a:hover {
+    color: black;
+  }
+  @media screen and (max-width: 375px) {
+    header .login a {
+      font-size: 24px;
+    }
+  }
+
+  footer {
+    width: 100%;
+    height: 14rem;
+    background-color: #be3d26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+  }
+  footer p {
+    color: white;
+    font-size: 25px;
+  }
+  @media screen and (max-width: 320px) {
+    footer p {
+      font-size: 20px;
+    }
+  }
+
+  .cartLogo {
+    margin-left: 20px;
+  }

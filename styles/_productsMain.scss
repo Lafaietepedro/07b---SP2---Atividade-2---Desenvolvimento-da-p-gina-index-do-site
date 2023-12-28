@@ -1,0 +1,159 @@
+main {
+    width: 100%;
+    min-height: 50rem;
+
+    .banner {
+        height: 50rem;
+        @media screen and (max-width: 320px) {
+         height: 40rem;           
+        }
+
+        .carousel-inner {
+            width: 100;
+            height: 100%;
+            
+            .carousel-item {
+                width: 100%;
+                height: 100%;
+
+                .guitarPromo {
+                    display: flex;
+                    align-items: stretch;
+                    justify-content: end;
+                    font-size: 70px;
+                    color: black;
+                    text-decoration: none;
+                    @media screen and (max-width: 320px) {
+                        font-size: 50px;
+                    }
+                }
+                
+            }
+
+            .carousel1 {
+                background-image: url(../images/tele.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            .carousel2 {
+                background-image: url(../images/fender2.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+
+            .carousel3 {
+                background-image: url(../images/616XbYqt4QS.jpg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+            }
+        }
+
+
+
+        div {
+            width: 50%;
+
+            h1 {
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                width: 100%;
+                font-size: 150px;
+                color: white;
+                text-shadow: -10px 0 black;
+
+                @media screen and (max-width: 1440px) {
+                    font-size: 130px;
+                }
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 110px;
+                }
+
+                @media screen and (max-width: 768px) {
+                    font-size: 90px;
+                }
+
+                @media screen and (max-width: 425px) {
+                    font-size: 70px;
+                    text-shadow: -7px 0 black;
+                }
+            }
+        }
+    }
+
+    .guitars {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h2 {
+            width: 100%;
+            font-size: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            background-color: black;
+            height: 8rem;
+            padding-top: 15px;
+        }
+
+        .products {
+            width: 90%;
+            margin: 60px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+
+            .container {
+                width: 35%;
+
+                &:hover {
+                    border-radius: 10px;
+                    box-shadow: 5px 5px 10px 5px black,
+                        -5px -5px 10px 5px black;
+                }
+
+                @media screen and (max-width: 425px) {
+                    width: 80%;
+                }
+
+                .container-img {
+                    width: 100%;
+                    border-radius: 10px;
+                    padding: 20px;
+
+                    img {
+                        width: 100%;
+
+                    }
+                }
+
+                .container-text {
+                    h3 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 30px;
+                    }
+
+                    h3,
+                    p {
+                        padding: 0px 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
